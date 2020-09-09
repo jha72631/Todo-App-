@@ -1,0 +1,61 @@
+.keyboard {
+  position: absolute;
+  width: 60%;
+  background: rgba(226, 26, 54, 0.5);
+  border-radius: 1.25em;
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  top: 75%;
+  left: 10%;
+  padding: 1em 0;
+}
+
+.keyboard-hidden {
+  top: 110%;
+
+}
+
+.keys-alignment {
+  display: flex;
+  justify-content: center;
+
+}
+
+.keyboard-key {
+  width:50px;
+  height: 40px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 0.75em;
+  color: rgba(35, 234, 68, 1);
+  font-size: 1.25em;
+  vertical-align: top;
+  cursor: pointer;
+  margin: 0.05em 0.12em;
+}
+
+.keyboard-key:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.keyboard-key-wide {
+  width: 70px;
+  position: relative;
+}
+
+.keyboard-key-extrawide{
+  width:30%;
+}
+
+.keyboard-key-activable::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background: rgba(225, 225, 225, 0.4);
+  border-radius: 1.25em;
+}
+
+.keyboard-key-active::after {
+  background: rgba(35, 234, 68, 1);
+}

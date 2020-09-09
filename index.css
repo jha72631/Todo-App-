@@ -1,0 +1,131 @@
+html, body {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  background: #acd49b;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  padding: 2em 0;
+}
+
+.container-head {
+  width: 90%;
+  margin: 0 auto;
+  background: rgba(123, 247, 237, 0.3);
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 1.25em;
+  padding: 1em 0;
+}
+
+.headtitle {
+  width: 50%;
+  font-weight: 300;
+  background: rgba(229, 79, 59, .3);
+  box-shadow: 5px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  padding: .75em 0;
+  border-radius: 1.25em;
+}
+
+.section-title {
+  width: 90%;
+  text-align: center;
+  font-weight: 300;
+  background: rgba(229, 79, 59, .3);
+  box-shadow: 5px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 0.75em;
+  padding: 0.75em 0;
+}
+
+.container-body {
+  width: 90%;
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: space-around;
+  background: rgba(123, 247, 237, 0.3);
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 1.25em;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.write-todos {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border-right: 4px solid #707070;
+  align-items: center;
+}
+
+.textmate,
+.save-todos {
+  width: 90%;
+  margin: 2em 2em;
+}
+
+.textmate {
+  font-size: 1.25em;
+  border-radius: 0.75rem;
+}
+
+.save-todos {
+  margin-top: 0;
+  padding: 1em 0;
+  background: rgba(16, 215, 77, .3);
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: fantasy;
+  cursor: pointer;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.saved-todo {
+  width: 35%;
+}
+
+
+.list-todos {
+  width: 90%;
+  font-size: 1.25em;
+  font-style: italic;
+  list-style: decimal;
+}
+
+.specific-todo {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.25em;
+  border-bottom: 1px solid #707070;
+}
+
+.specific-todo::before{
+  content:"* "
+}
+
+.para {
+  width: 70%;
+  margin: 0;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.remove-button {
+  text-align: center;
+  width: 20%;
+  height: 40px;
+  border-radius: 1.25em;
+  background: rgba(16, 215, 77, .3);
+  cursor: pointer;
+  font-family: fantasy;
+  text-transform: uppercase;
+}
